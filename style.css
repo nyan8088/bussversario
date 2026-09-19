@@ -45,7 +45,7 @@
 
 @font-face {
     font-family: "Shafarik";
-    src: url("fonts/Shafarik.ttf") format("truetype");
+    src: url("fonts/Shafarik-Regular.ttf") format("truetype");
 }
 
 @font-face {
@@ -58,127 +58,107 @@
     src: url("fonts/Montserrat-Regular.ttf") format("truetype");
 }
 
-
-/* ===== PÁGINA ===== */
-
 * {
     box-sizing: border-box;
 }
 
 html,
 body {
+    margin: 0;
     width: 100%;
     height: 100%;
-    margin: 0;
     overflow: hidden;
 }
 
 body {
-    background: white;
+    background: #fff;
 }
 
-.mosaico {
+.caos {
     width: 100vw;
     height: 100dvh;
-
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-
+    position: relative;
     overflow: hidden;
 }
 
-.mosaico span {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Textos */
 
-    text-align: center;
-    line-height: 1;
-
-    padding: 8px;
-
-    /* Evita que textos gigantes criem overflow */
-    max-width: 100%;
-    overflow: hidden;
+.caos span {
+    position: absolute;
+    white-space: nowrap;
+    line-height: 0.9;
 }
 
+.f1  { font-family: "Atomic Age";      font-size: 4vw;  top: 3%;  left: 2%;  transform: rotate(-7deg); }
+.f2  { font-family: "Courier Prime";   font-size: 3vw;  top: 8%;  left: 25%; transform: rotate(4deg); }
+.f3  { font-family: "EB Garamond";     font-size: 5vw;  top: 2%;  left: 55%; transform: rotate(-3deg); }
+.f4  { font-family: "Fontdiner Swanky";font-size: 3.5vw;top: 13%; left: 72%; transform: rotate(8deg); }
+.f5  { font-family: "Geo";             font-size: 4vw;  top: 18%; left: 5%;  transform: rotate(5deg); }
+.f6  { font-family: "Marlboro";        font-size: 5vw;  top: 23%; left: 31%; transform: rotate(-9deg); }
+.f7  { font-family: "Monomakh";        font-size: 3vw;  top: 20%; left: 62%; transform: rotate(2deg); }
+.f8  { font-family: "Noto Serif JP";   font-size: 3vw;  top: 30%; left: 3%;  transform: rotate(-4deg); }
+.f9  { font-family: "Rosario";         font-size: 4vw;  top: 32%; left: 20%; transform: rotate(7deg); }
+.f10 { font-family: "Shafarik";        font-size: 5vw;  top: 28%; left: 70%; transform: rotate(-5deg); }
+.f11 { font-family: "Zen Dots";        font-size: 3vw;  top: 40%; left: 5%;  transform: rotate(3deg); }
+.f12 { font-family: "Montserrat";      font-size: 5vw;  top: 42%; left: 28%; transform: rotate(-6deg); }
+.f13 { font-family: "Atomic Age";      font-size: 3vw;  top: 38%; left: 65%; transform: rotate(10deg); }
+.f14 { font-family: "Courier Prime";   font-size: 4vw;  top: 50%; left: 2%;  transform: rotate(-3deg); }
+.f15 { font-family: "EB Garamond";     font-size: 5vw;  top: 53%; left: 45%; transform: rotate(6deg); }
+.f16 { font-family: "Geo";             font-size: 3vw;  top: 48%; left: 72%; transform: rotate(-8deg); }
+.f17 { font-family: "Marlboro";        font-size: 6vw;  top: 59%; left: 8%;  transform: rotate(5deg); }
+.f18 { font-family: "Monomakh";        font-size: 3.5vw;top: 62%; left: 32%; transform: rotate(-4deg); }
+.f19 { font-family: "Noto Serif JP";   font-size: 4vw;  top: 58%; left: 60%; transform: rotate(7deg); }
+.f20 { font-family: "Rosario";         font-size: 3vw;  top: 68%; left: 2%;  transform: rotate(-6deg); }
+.f21 { font-family: "Shafarik";        font-size: 4vw;  top: 70%; left: 25%; transform: rotate(3deg); }
+.f22 { font-family: "Zen Dots";        font-size: 5vw;  top: 66%; left: 63%; transform: rotate(-10deg); }
+.f23 { font-family: "Montserrat";      font-size: 3vw;  top: 77%; left: 5%;  transform: rotate(4deg); }
+.f24 { font-family: "Atomic Age";      font-size: 6vw;  top: 76%; left: 36%; transform: rotate(-5deg); }
+.f25 { font-family: "Courier Prime";   font-size: 3vw;  top: 80%; left: 72%; transform: rotate(8deg); }
+.f26 { font-family: "Fontdiner Swanky";font-size: 4vw;  top: 85%; left: 8%;  transform: rotate(-7deg); }
+.f27 { font-family: "EB Garamond";     font-size: 5vw;  top: 84%; left: 35%; transform: rotate(5deg); }
+.f28 { font-family: "Geo";             font-size: 3vw;  top: 88%; left: 63%; transform: rotate(-4deg); }
+.f29 { font-family: "Rosario";         font-size: 4vw;  top: 92%; left: 4%;  transform: rotate(6deg); }
+.f30 { font-family: "Zen Dots";        font-size: 3vw;  top: 91%; left: 70%; transform: rotate(-8deg); }
 
-/* ===== FONTES ===== */
-
-.fonte1 {
-    font-family: "Atomic Age";
-    font-size: clamp(18px, 4vw, 50px);
-}
-
-.fonte2 {
-    font-family: "Courier Prime";
-    font-size: clamp(18px, 4vw, 50px);
-}
-
-.fonte3 {
-    font-family: "EB Garamond";
-    font-size: clamp(20px, 4.5vw, 55px);
-}
-
-.fonte4 {
-    font-family: "Fontdiner Swanky";
-    font-size: clamp(16px, 3.5vw, 45px);
-}
-
-.fonte5 {
-    font-family: "Geo";
-    font-size: clamp(20px, 4vw, 50px);
-}
-
-.fonte6 {
-    font-family: "Marlboro";
-    font-size: clamp(18px, 4vw, 50px);
-}
-
-.fonte7 {
-    font-family: "Monomakh";
-    font-size: clamp(18px, 4vw, 50px);
-}
-
-.fonte8 {
-    font-family: "Noto Serif JP";
-    font-size: clamp(16px, 3.5vw, 45px);
-}
-
-.fonte9 {
-    font-family: "Rosario";
-    font-size: clamp(20px, 4vw, 50px);
-}
-
-.fonte10 {
-    font-family: "Shafarik";
-    font-size: clamp(18px, 4vw, 50px);
-}
-
-.fonte11 {
-    font-family: "Zen Dots";
-    font-size: clamp(18px, 4vw, 50px);
-}
-
-.fonte12 {
-    font-family: "Montserrat";
-    font-size: clamp(18px, 4vw, 50px);
-}
-
-
-/* ===== CELULAR ===== */
 
 @media (max-width: 600px) {
-    .mosaico {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(6, 1fr);
+
+    .caos span {
+        font-size: 5vw;
     }
 
-    .mosaico span {
-        padding: 5px;
-    }
+    .f1  { left: 0%;  top: 2%; }
+    .f2  { left: 30%; top: 5%; }
+    .f3  { left: 5%;  top: 10%; }
+    .f4  { left: 45%; top: 13%; }
+    .f5  { left: -3%; top: 18%; }
+    .f6  { left: 25%; top: 22%; }
+    .f7  { left: 60%; top: 26%; }
+    .f8  { left: 0%;  top: 31%; }
+    .f9  { left: 25%; top: 35%; }
+    .f10 { left: 55%; top: 39%; }
+    .f11 { left: -5%; top: 44%; }
+    .f12 { left: 25%; top: 47%; }
+    .f13 { left: 65%; top: 51%; }
+    .f14 { left: 0%;  top: 55%; }
+    .f15 { left: 35%; top: 59%; }
+    .f16 { left: 65%; top: 63%; }
+    .f17 { left: 0%;  top: 67%; }
+    .f18 { left: 30%; top: 71%; }
+    .f19 { left: 60%; top: 75%; }
+    .f20 { left: -5%; top: 79%; }
+    .f21 { left: 25%; top: 82%; }
+    .f22 { left: 55%; top: 85%; }
+    .f23 { left: 0%;  top: 88%; }
+    .f24 { left: 30%; top: 91%; }
+    .f25 { left: 65%; top: 93%; }
+    .f26 { left: 5%;  top: 95%; }
+    .f27 { left: 35%; top: 96%; }
+    .f28 { left: 60%; top: 97%; }
+    .f29 { left: 0%;  top: 98%; }
+    .f30 { left: 40%; top: 99%; }
 }
+
 a {
     color: inherit;
     text-decoration: none;
