@@ -1,0 +1,185 @@
+@font-face {
+    font-family: "Atomic Age";
+    src: url("fonts/AtomicAge-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Courier Prime";
+    src: url("fonts/CourierPrime-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "EB Garamond";
+    src: url("fonts/EBGaramond-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Fontdiner Swanky";
+    src: url("fonts/FontdinerSwanky-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Geo";
+    src: url("fonts/Geo-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Marlboro";
+    src: url("fonts/Marlboro.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Monomakh";
+    src: url("fonts/Monomakh-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Noto Serif JP";
+    src: url("fonts/NotoSerifJP-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Rosario";
+    src: url("fonts/Rosario-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Shafarik";
+    src: url("fonts/Shafarik.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Zen Dots";
+    src: url("fonts/ZenDots-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("fonts/Montserrat-Regular.ttf") format("truetype");
+}
+
+
+/* ===== PÁGINA ===== */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+body {
+    background: white;
+}
+
+.mosaico {
+    width: 100vw;
+    height: 100dvh;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+    overflow: hidden;
+}
+
+.mosaico span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    line-height: 1;
+
+    padding: 8px;
+
+    /* Evita que textos gigantes criem overflow */
+    max-width: 100%;
+    overflow: hidden;
+}
+
+
+/* ===== FONTES ===== */
+
+.fonte1 {
+    font-family: "Atomic Age";
+    font-size: clamp(18px, 4vw, 50px);
+}
+
+.fonte2 {
+    font-family: "Courier Prime";
+    font-size: clamp(18px, 4vw, 50px);
+}
+
+.fonte3 {
+    font-family: "EB Garamond";
+    font-size: clamp(20px, 4.5vw, 55px);
+}
+
+.fonte4 {
+    font-family: "Fontdiner Swanky";
+    font-size: clamp(16px, 3.5vw, 45px);
+}
+
+.fonte5 {
+    font-family: "Geo";
+    font-size: clamp(20px, 4vw, 50px);
+}
+
+.fonte6 {
+    font-family: "Marlboro";
+    font-size: clamp(18px, 4vw, 50px);
+}
+
+.fonte7 {
+    font-family: "Monomakh";
+    font-size: clamp(18px, 4vw, 50px);
+}
+
+.fonte8 {
+    font-family: "Noto Serif JP";
+    font-size: clamp(16px, 3.5vw, 45px);
+}
+
+.fonte9 {
+    font-family: "Rosario";
+    font-size: clamp(20px, 4vw, 50px);
+}
+
+.fonte10 {
+    font-family: "Shafarik";
+    font-size: clamp(18px, 4vw, 50px);
+}
+
+.fonte11 {
+    font-family: "Zen Dots";
+    font-size: clamp(18px, 4vw, 50px);
+}
+
+.fonte12 {
+    font-family: "Montserrat";
+    font-size: clamp(18px, 4vw, 50px);
+}
+
+
+/* ===== CELULAR ===== */
+
+@media (max-width: 600px) {
+    .mosaico {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    .mosaico span {
+        padding: 5px;
+    }
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
