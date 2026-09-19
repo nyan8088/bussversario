@@ -1,61 +1,61 @@
 @font-face {
     font-family: "Atomic Age";
-    src: url("fonts/AtomicAge-Regular.ttf") format("truetype");
+    src: url("AtomicAge-Regular.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Courier Prime";
-    src: url("fonts/CourierPrime-Regular.ttf") format("truetype");
+    src: url("CourierPrime-Regular.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "EB Garamond";
-    src: url("fonts/EBGaramond-Regular.ttf") format("truetype");
+    src: url("EBGaramond-Regular.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Fontdiner Swanky";
-    src: url("fonts/FontdinerSwanky-Regular.ttf") format("truetype");
+    src: url("FontdinerSwanky-Regular.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Geo";
-    src: url("fonts/Geo-Regular.ttf") format("truetype");
+    src: url("Geo-Regular.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Marlboro";
-    src: url("fonts/Marlboro.ttf") format("truetype");
+    src: url("Marlboro.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Monomakh";
-    src: url("fonts/Monomakh-Regular.ttf") format("truetype");
+    src: url("Monomakh-Regular.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Noto Serif JP";
-    src: url("fonts/NotoSerifJP-Regular.ttf") format("truetype");
+    src: url("NotoSerifJP-Regular.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Rosario";
-    src: url("fonts/Rosario-Regular.ttf") format("truetype");
+    src: url("Rosario-Regular.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Shafarik";
-    src: url("fonts/Shafarik-Regular.ttf") format("truetype");
+    src: url("Shafarik-Regular.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Zen Dots";
-    src: url("fonts/ZenDots-Regular.ttf") format("truetype");
+    src: url("ZenDots-Regular.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Montserrat";
-    src: url("fonts/Montserrat-Regular.ttf") format("truetype");
+    src: url("Montserrat-Regular.ttf") format("truetype");
 }
 
 * {
